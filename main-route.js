@@ -24,6 +24,9 @@ app.get('/', (req, res) => {
     res.render('Homepage', {title: 'Homepage'})
 })
 
+const routesController = require('./controllers/routes_controller')
+app.use('/', routesController)
+
 // 404 Paage
 
 app.get('*', (req, res) => {
