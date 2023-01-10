@@ -30,10 +30,12 @@ app.use('/', routesController)
 // 404 Paage
 
 app.get('*', (req, res) => {
-    res.send('404 Not Found')
-})
+    res.send('404 not found', {title: '404 Not Found'})})
+
 
 // Listing Port
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
 })
+
+

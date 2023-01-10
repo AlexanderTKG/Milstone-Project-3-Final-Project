@@ -1,5 +1,5 @@
 const React = require("react");
-const Default = require("./layouts/Default");
+const Default = require("./layout/Default");
 
 function HomePage() {
   console.log("HomePage");

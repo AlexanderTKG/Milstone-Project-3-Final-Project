@@ -54,12 +54,12 @@ function Default(html) {
           <header>
             <Navbar bg="light" expand="lg">
               <Container>
-                <Navbar.Brand href="#home">Grandma's Bakery</Navbar.Brand>
+                <Navbar.Brand href="#home">Alexander's Page</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                    <Nav.Link href="/bakery/homepage">Home</Nav.Link>
-                    <Nav.Link href="/bakery/aboutus">About Us</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/about">About Us</Nav.Link>
                     <Nav.Link href="/bakery">Collection</Nav.Link>
                     <Nav.Link href="/bakery/new">Add a Recipe</Nav.Link>
                   </Nav>
