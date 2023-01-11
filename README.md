@@ -1,9 +1,9 @@
 # Milstone-Project-3-Final-Project
 
-npm install
-npm i express
-npm install method-override
-npm install dotenv
-npm install mongoose
-npm install express-react-views react react-dom
-npm install react-bootstrap bootstrap
+## Node modules
+1. [npm](#install)
+2. [npm i](#express)
+3. [npm i](#method-override)
+4. [npm i](#dotenv)
+5. [npm i](#mongoose)
+6. [npm i](#express-react-views,react,react-dom)
