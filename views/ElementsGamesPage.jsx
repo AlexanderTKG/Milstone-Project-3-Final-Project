@@ -1,8 +1,8 @@
 const React = require('react')
 const Default = require('./layout/Navbar')
 
-function ProjectPage () {
-    console.log('Project Page')
+function Elements () {
+    console.log('Elements Game')
     return (
       <Default>
         <html lang="en">
@@ -10,9 +10,8 @@ function ProjectPage () {
           <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="styles" />
           <title>Life Water Fire Spell cast</title>
-          <link rel="stylesheet" href="styles.css" />
-          <script src="Game.js" defer></script>
         </head>
         <body>
           <div class="chosenSpell">
@@ -34,4 +33,4 @@ function ProjectPage () {
     );
 }
 
-module.exports = ProjectPage
+module.exports = Elements
