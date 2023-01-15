@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 const React = require('react')
 
 
+
 function Default(html) {
   console.log('navbar')
   return (
@@ -52,20 +53,15 @@ function Default(html) {
       <body>
         <div className="wrapper">
           <header>
-            <Navbar  bg="light" expand="lg">
+            <Navbar bg="light" expand="lg">
               <Container>
-                <nav class="navbar-light bg-light" >
-                  <a class='navbar-brand' href='#' >
-                    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
-                  </a>
-                </nav>
-                <Navbar.Brand href="/">Alexander's Page</Navbar.Brand>
+                <Navbar.Brand href="#home">Alexander</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/about">About Us</Nav.Link>
-                    <Nav.Link href="/projects">Collection</Nav.Link>
+                    <Nav.Link href="/projects">Project</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
