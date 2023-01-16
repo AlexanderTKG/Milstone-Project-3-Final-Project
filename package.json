@@ -9,5 +9,13 @@
     "react": "^16.14.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^16.14.0"
+  },
+
+  "scripts": {
+    "test": "nodemon main-route.js"
+  },
+
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

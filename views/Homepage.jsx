@@ -10,6 +10,14 @@ function HomePage() {
           <title>Home</title>
           <meta charSet="utf=8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <style>
+            {`
+            body {
+              -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+              box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            `}
+          </style>
         </head>
         <body>
         <header>

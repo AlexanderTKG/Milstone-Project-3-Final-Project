@@ -49,6 +49,13 @@ function Default(html) {
         ></script>
 
         <script>var Alert = ReactBootstrap.Alert;</script>
+        <style>
+          {`
+          body {
+            background-color: rgb(187, 147, 68);
+          }
+          `}
+        </style>
       </head>
       <body>
         <div className="wrapper">
