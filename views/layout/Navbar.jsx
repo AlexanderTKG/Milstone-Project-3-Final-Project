@@ -10,76 +10,40 @@ const React = require('react')
 function Default(html) {
   console.log('navbar')
   return (
-    <html>
+    <html lang="en">
       <head>
-        <title>{html.title || "Default"}</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-          integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
-          crossOrigin="anonymous"
-        />
-        <link rel="stylesheet" href="/main.css" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-          crossorigin="anonymous"
-        />
-
-        <script
-          src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
-          crossorigin
-        ></script>
-
-        <script
-          src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-          crossorigin
-        ></script>
-
-        <script
-          src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-          crossorigin
-        ></script>
-
-        <script>var Alert = ReactBootstrap.Alert;</script>
-        <style>
-          {`
-          body {
-            background-color: rgb(187, 147, 68);
-          }
-          `}
-        </style>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
       </head>
       <body>
-        <div className="wrapper">
-          <header>
-            <Navbar bg="light" expand="lg">
-              <Container>
-                <Navbar.Brand href="#home">Alexander</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="me-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about">About Us</Nav.Link>
-                    <Nav.Link href="/projects">Project</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Container>
-            </Navbar>
-          </header>
-          <div className="container">{html.children}</div>
-        </div>
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
       </body>
     </html>
-  );
-}
 
+  )
+  }
 
 module.exports = Default

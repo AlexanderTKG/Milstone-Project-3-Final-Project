@@ -4,49 +4,49 @@ const Default = require("./layout/Navbar");
 function HomePage() {
   console.log("HomePage");
   return (
-    <Default>
-      <html lang='en' >
-        <head>
-          <title>Home</title>
-          <meta charSet="utf=8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <style>
-            {`
-            body {
-              -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-              box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-            }
-            `}
-          </style>
-        </head>
-        <body>
-        <header>
-          <h2>Cities</h2>
-        </header>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8"/>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
+      <body>
 
-        <section>
-          <nav>
-            <ul>
-              <li><a href="#">London</a></li>
-              <li><a href="#">Paris</a></li>
-              <li><a href="#">Tokyo</a></li>
-            </ul>
-          </nav>
-          
-          <article>
-            <h1>London</h1>
-            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-          </article>
-        </section>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="/images/AMD.png" alt="logo" 
+          style={{
+            width: '40px',
+          }}
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+            </li>    
+          </ul>
+        </div>  
+      </nav>
+{/* ---------------------------------------------------------------------------------- */}
+      <h1>Hello world</h1>
+      </body>
+    </html>
 
-        <footer>
-          <p>Footer</p>
-        </footer>
-        </body>
-      </html>
-    </Default>
-  );
-}
+  )
+  }
 
 module.exports = HomePage;

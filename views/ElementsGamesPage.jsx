@@ -4,12 +4,15 @@ const Default = require('./layout/Navbar')
 function Elements () {
     console.log('Elements Game')
     return (
-      <Default>
         <html lang="en">
         <head>
           <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
           <link rel='stylesheet' href='Elements-Game.css' />
           <title>Life Water Fire Spell cast</title>
           <style>
@@ -70,6 +73,25 @@ function Elements () {
           </style>
         </head>
         <body>
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects">Projects</a>
+                </li>    
+              </ul>
+            </div>  
+          </nav>
           <div class="chosenSpell">
             <button class="spellChosen" data-selection="Life">🌱</button>
             <button class="spellChosen" data-selection="Fire">🔥</button>
@@ -85,7 +107,6 @@ function Elements () {
           </div>
         </body>
         </html>
-      </Default>
     );
 }
 
