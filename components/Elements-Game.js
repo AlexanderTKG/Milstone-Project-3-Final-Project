@@ -1,4 +1,6 @@
+const React = require('react')
 
+function gameElement() {
 const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector("[data-final-column");
 const SELECTION = [
@@ -55,3 +57,6 @@ function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTION.length)
     return SELECTION[randomIndex]
 }
+}
+
+module.exports = gameElement;
