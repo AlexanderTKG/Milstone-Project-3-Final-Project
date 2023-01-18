@@ -15,7 +15,8 @@ function HomePage() {
             color: #2C73D2;
           }
           .test {
-            background-color: #008F7A;
+            background: rgb(52,74,83);
+            background: linear-gradient(90deg, rgba(52,74,83,1) 0%, rgba(72,92,110,1) 35%, rgba(100,108,135,1) 100%);
           }
           `}
         </style>

@@ -38,10 +38,10 @@ function Default(html) {
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/projects" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="/projects/elements-games">Element-Game</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="/404">Coming Soon</a>
+                <a class="dropdown-item" href="/404">Coming Soon</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+                <a class="dropdown-item" href="/404">Coming Soon</a>
               </div>
             </li>
             <li class="nav-item">
