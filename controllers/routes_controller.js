@@ -17,9 +17,6 @@ r0utes.get('/projects', (req, res) => {
 })
 
 //Elements-Games route
-r0utes.get('/projects/elements-games', (req, res) => {
-    res.render('ElementsGamesPage', {title: 'Elements Games'})
-})
 
 
 module.exports = r0utes
