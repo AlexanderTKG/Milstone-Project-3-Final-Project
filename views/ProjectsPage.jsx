@@ -12,6 +12,9 @@ function ProjectPage () {
         <title>Projects</title>
       </head>
       <body>
+        <header>
+          <Default></Default>
+        </header>
       </body>
     </html>
     )
