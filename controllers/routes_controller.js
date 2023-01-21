@@ -19,5 +19,3 @@ r0utes.get('/projects', (req, res) => {
 
 
 module.exports = r0utes
-
-

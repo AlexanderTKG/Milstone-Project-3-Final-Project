@@ -98,14 +98,14 @@ function Aboutus () {
           </div>
             <div class="column" >
               <div class="card">
-                <img src="/images/R.jfif" alt="Mike" 
+                <img src="/images/cat.jpg" alt="cat" 
                 style={{
                   width: '100%',
                   }} />
                 <div class="container">
                   <h2>Alexander Martinez-De Jesus</h2>
                   <p class="title">Software Develaper</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <p>Comming soon Icon links</p>
                   <a href='https://github.com/AlexanderTKG?tab=repositories'><button class="button">git link</button></a>
                 </div>
               </div>
